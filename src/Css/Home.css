@@ -1,0 +1,10 @@
+.imgHome {
+  height: 200px;
+  width: 100%;
+}
+.uk-heading-bullet {
+  color: grey;
+}
+.uk-heading-bullet::before {
+  border-left: 5px solid skyblue;
+}
