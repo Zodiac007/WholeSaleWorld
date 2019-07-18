@@ -4,6 +4,10 @@
     <title>WholeSaleWorld</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width intial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- UIKIT CSS -->
     <link
       rel="stylesheet"
@@ -16,32 +20,32 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="uk-navbar-container" uk-navbar>
-      <a class="uk-navbar-item uk-logo" href="#">WholeSaleWorld</a>
-      <div id="offcanvas-nav" class="uk-navbar-right">
-        <form class="uk-search uk-search-default">
-          <input
-            class="uk-search-input"
-            type="search"
-            placeholder="Search..."
-          />
-        </form>
-        <ul class="uk-navbar-nav">
-          <li class="uk-active"><a href="#">Home</a></li>
-          <li>
-            <a href="#">About Us</a>
-            <div class="uk-navbar-dropdown">
-              <ul class="uk-nav uk-navbar-dropdown-nav">
-                <li class="uk-active"><a href="#">Active</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-              </ul>
-            </div>
-          </li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-    </nav>
+    <header>
+      <nav class="uk-navbar-container" uk-navbar>
+        <a href="index.html" class="uk-navbar-item uk-logo">
+          <img src="Images/ogo.png" class="logo" alt="logoName" srcset="" />
+        </a>
+        <div class="uk-navbar-right">
+          <a class="uk-navbar-toggle dis-none h-40" id="navbar_toggle">
+            <i uk-icon="icon: menu; ratio: 2"></i>
+          </a>
+          <div class="navbar-collapse" id="navbar_collapse">
+            <ul class="uk-navbar-nav">
+              <li class="uk-active"><a href="">Home</a></li>
+              <li class="uk-parent"><a href="">About</a></li>
+              <li class="uk-parent"><a href="">Blog</a></li>
+              <li class="uk-parent"><a href="">Services</a></li>
+              <li><a href="">Log in</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
+    <script src="Main.js"></script>
+
     <!-- SLider -->
     <div
       class="uk-position-relative uk-visible-toggle uk-light"
@@ -59,6 +63,18 @@
               uk-cover
             />
           </div>
+          <div class="uk-position-center uk-panel">
+            <div class="uk-margin">
+              <form class="uk-search uk-search-default uk-search-large">
+                <a href="#" uk-search-icon></a>
+                <input
+                  class="uk-search-input"
+                  type="search"
+                  placeholder="Search..."
+                />
+              </form>
+            </div>
+          </div>
         </li>
         <li>
           <div
@@ -66,12 +82,36 @@
           >
             <img src="Images/TopDestinations/bali2.jpg" alt="" uk-cover />
           </div>
+          <div class="uk-position-center uk-panel">
+            <div class="uk-margin">
+              <form class="uk-search uk-search-default uk-search-large">
+                <a href="#" uk-search-icon></a>
+                <input
+                  class="uk-search-input"
+                  type="search"
+                  placeholder="Search..."
+                />
+              </form>
+            </div>
+          </div>
         </li>
         <li>
           <div
             class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-bottom-left"
           >
             <img src="Images//TopDestinations/kathmandu.jpeg" alt="" uk-cover />
+          </div>
+          <div class="uk-position-center uk-panel">
+            <div class="uk-margin">
+              <form class="uk-search uk-search-default uk-search-large">
+                <a href="#" uk-search-icon></a>
+                <input
+                  class="uk-search-input"
+                  type="search"
+                  placeholder="Search..."
+                />
+              </form>
+            </div>
           </div>
         </li>
       </ul>
@@ -246,6 +286,204 @@
                 </button>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- New Section POPULAR ACTIVITIES -->
+
+    <h1 class="uk-heading-bullet uk-margin-large-left">Popular Activities</h1>
+    <div
+      class="uk-position-relative uk-visible-toggle uk-light uk-margin-large-right uk-margin-large-left"
+      tabindex="-1"
+      uk-slider
+    >
+      <ul
+        class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m uk-grid"
+      >
+        <li>
+          <div class="uk-panel">
+            <img
+              src="Images/TopDestinations/VietnamCambodia.jpg"
+              class="imgPopular"
+              alt=""
+            />
+            <div class="uk-position-center uk-panel">
+              <h1>Vietnam</h1>
+            </div>
+            <div>
+              <P class="uk-position-bottom-left uk-margin-small-left RsColor"
+                ><i class="fa fa-inr" aria-hidden="true"></i>8,549</P
+              >
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="uk-panel">
+            <img
+              src="Images/TopDestinations/singapore2.jpg"
+              class="imgPopular"
+              alt=""
+            />
+            <div class="uk-position-center uk-panel"><h1>Singapore</h1></div>
+          </div>
+        </li>
+        <li>
+          <div class="uk-panel">
+            <img
+              src="Images/TopDestinations/lankawi.jpg"
+              class="imgPopular"
+              alt=""
+            />
+            <div class="uk-position-center uk-panel"><h1>Malaysia</h1></div>
+          </div>
+        </li>
+        <li>
+          <div class="uk-panel">
+            <img
+              src="Images/TopDestinations/dublin-skyline.jpg"
+              class="imgPopular"
+              alt=""
+            />
+            <div class="uk-position-center uk-panel"><h1>Indonesia</h1></div>
+          </div>
+        </li>
+        <li>
+          <div class="uk-panel">
+            <img
+              src="Images/TopDestinations/bali2.jpg"
+              class="imgPopular"
+              alt=""
+            />
+            <div class="uk-position-center uk-panel"><h1>India</h1></div>
+          </div>
+        </li>
+        <li>
+          <div class="uk-panel">
+            <img
+              src="Images/TopDestinations/UAE.jpg"
+              class="imgPopular"
+              alt=""
+            />
+            <div class="uk-position-center uk-panel"><h1>UAE</h1></div>
+          </div>
+        </li>
+        <li>
+          <div class="uk-panel">
+            <img
+              src="Images/TopDestinations/MALAYSIA1.jpg"
+              class="imgPopular"
+              alt=""
+            />
+            <div class="uk-position-center uk-panel"><h1>Singapore</h1></div>
+          </div>
+        </li>
+        <li>
+          <div class="uk-panel">
+            <img
+              src="Images/TopDestinations/Hoi-an-vietnam.jpg"
+              class="imgPopular"
+              alt=""
+            />
+            <div class="uk-position-center uk-panel"><h1>Indonesia</h1></div>
+          </div>
+        </li>
+        <li>
+          <div class="uk-panel">
+            <img
+              src="Images/TopDestinations/Bodnath_Sky.jpg"
+              class="imgPopular"
+              alt=""
+            />
+            <div class="uk-position-center uk-panel"><h1>Nepal</h1></div>
+          </div>
+        </li>
+        <li>
+          <div class="uk-panel">
+            <img
+              src="Images/TopDestinations/Trafalgar Square , London Bridge.jpg"
+              class="imgPopular"
+              alt=""
+            />
+            <div class="uk-position-center uk-panel">
+              <h2>United Kingdom</h2>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <a
+        class="uk-position-center-left uk-position-small uk-hidden-hover"
+        href="#"
+        uk-slidenav-previous
+        uk-slider-item="previous"
+      ></a>
+      <a
+        class="uk-position-center-right uk-position-small uk-hidden-hover"
+        href="#"
+        uk-slidenav-next
+        uk-slider-item="next"
+      ></a>
+    </div>
+    <!-- Recomended by us -->
+
+    <!-- Footer -->
+
+    <div class="uk-section uk-section-small uk-section-muted">
+      <div class="uk-container">
+        <h3>Whole Sale World</h3>
+
+        <div
+          class="uk-grid-match uk-child-width-1-4@m uk-column-divider"
+          uk-grid
+        >
+          <div>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+          </div>
+          <div class="uk-width-1-3 uk-align-right@s">
+            <a class="fb-ic" href="#" target="_blank">
+              <i
+                class="fa fa-facebook-square fa-lg mr-4"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic" href="#" target="_blank">
+              <i class="fa fa-twitter-square fa-lg mr-4" aria-hidden="true"></i>
+            </a>
+            <!-- Youtube -->
+            <a class="ytube-ic" href="#" target="_blank">
+              <i class="fa fa-youtube-play fa-lg mr-4" aria-hidden="true"></i>
+            </a>
+            <!-- Linkedin -->
+            <a class="li-ic" href="#" target="_blank">
+              <i
+                class="fa fa-linkedin-square fa-lg mr-4"
+                aria-hidden="true"
+              ></i>
+            </a>
+
+            <!--Instagram-->
+            <a class="ins-ic" href="#" target="_blank">
+              <i class="fa fa-instagram fa-lg mr-4"> </i>
+            </a>
+            <!--Pinterest-->
+            <a class="pin-ic" href="#" target="_blank">
+              <i class="fa fa-pinterest-square fa-lg mr-4"> </i>
+            </a>
+          </div>
+          <div>
+            <h5 className="">
+              <b>We are at : </b>Block 79 Ayer Rajah Crescent, #05-03, Singapore
+              139955
+              <b>Get in touch : </b>
+              <a href="#">
+                hello@killy.ai
+              </a>
+            </h5>
+            <h5 className=""></h5>
           </div>
         </div>
       </div>

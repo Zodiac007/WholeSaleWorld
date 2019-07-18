@@ -1,10 +1,89 @@
+/* NavBar */
+.dis-none {
+  /* display: none; */
+}
+#navbar_toggle {
+  position: absolute;
+  right: 1em;
+  top: 2em;
+}
+.h-40 {
+  height: 40px !important;
+  min-height: 40px;
+}
+.logo {
+  width: 70px;
+}
+
+@media screen and (max-width: 768px) {
+  .uk-navbar-right {
+    /* display: none; */
+    width: 100%;
+  }
+  .uk-navbar-item {
+    display: inline;
+  }
+
+  .uk-navbar-nav {
+    display: block;
+  }
+  .navbar-collapse {
+    width: 100%;
+  }
+  .uk-navbar-nav li {
+    display: block;
+    padding: 10px;
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+  }
+  .uk-navbar-nav li a {
+    display: block;
+    width: 80%;
+    padding: 0.5rem 1rem;
+  }
+}
+
 .imgHome {
   height: 200px;
+  width: 100%;
+}
+.imgPopular {
+  height: 250px;
   width: 100%;
 }
 .uk-heading-bullet {
   color: grey;
 }
+.uk-search-input {
+  height: 50px !important;
+  background-color: white !important;
+  color: rgb(0, 84, 180) !important;
+  font-size: 24px !important;
+  border-radius: 5px;
+}
+input::placeholder {
+  color: rgb(0, 84, 180) !important;
+  font-size: 24px !important;
+  margin-top: 30% !important;
+}
+.uk-search-icon {
+  color: rgb(0, 84, 180) !important;
+}
 .uk-heading-bullet::before {
   border-left: 5px solid skyblue;
+}
+.popularHeading {
+  font-size: 16px;
+  font-weight: 700;
+}
+.RsColor {
+  color: rgb(0, 86, 167);
+  padding: 2px 8px;
+  border-radius: 5px;
+  background-color: WHITE;
+  font-weight: 700;
+}
+.fa {
+  font-size: 40px;
+  padding: 1%;
 }
