@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WholeSaleWorld | About Us</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width intial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- UIKIT CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/css/uikit.min.css"
+    />
+    <!-- UIKIT JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/js/uikit-icons.min.js"></script>
+    <link href="Css/Home.css" rel="stylesheet" />
+  </head>
+  <body>
+      <!-- NAVBAR -->
+    
+<div class="uk-offcanvas-content">
+    <!-- menu position. delete .uk-light to change black navbar to white (also you should change logo to dark one)-->
+    <nav class="uk-navbar-container uk-light" uk-navbar="mode: click" uk-sticky="animation: uk-animation-slide-top; show-on-up: true">
+      <!-- logo or title-->
+      <div class="uk-navbar-left nav-overlay"><a class="uk-navbar-item uk-logo" href="#">
+          <!--h3 Site Name--><img src="Images/Logo.png" alt="logo" width="64"></a>
+          <h3 class="siteName">Whole Sale World</h3>
+        </div>
+      <!-- end logo or title-->
+      <!-- menu-->
+      <div class="uk-navbar-right nav-overlay">
+        <div class="uk-navbar-flip">
+          <ul class="uk-navbar-nav uk-visible@s">
+            <li class="uk-active"><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Cart</a></li>
+            <!-- <li><a href="#">Item 5</a></li> -->
+            <!-- <li><a href="#">Item 6</a></li> -->
+            <li><a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a></li>
+          </ul>
+          <ul class="uk-navbar-nav uk-hidden@s">
+            <li><a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a></li>
+            <li><a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #mobile-navbar"></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- endmenu-->
+      <!-- Overlay Search-->
+      <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
+        <div class="uk-navbar-item uk-width-expand">
+          <form class="uk-search uk-search-navbar uk-width-1-1">
+            <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+          </form>
+        </div><a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+      </div>
+      <!-- end overlay search-->
+    </nav>
+    <!-- end menu position-->
+    <!-- off-canvas menu-->
+    <div id="mobile-navbar" uk-offcanvas="mode: slide; flip: false">
+      <div class="uk-offcanvas-bar">
+        <!-- off-canvas close button-->
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <!-- off-canvas close button-->
+        <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+          <!-- logo or title-->
+          <li class="uk-text-center" style="padding: 0 0 25px 0;"><a href="#">
+              <!--h3 Site Name--><img src="Images/Logo.png" alt="logo" width="64"></a></li>
+          <!-- end logo or title-->
+          <!-- menu-->
+          <li>
+            <hr>
+          </li>
+          <li class="uk-text-center">
+            <h3>Whole Sale World</h3>
+          </li>
+          <li class="uk-active"><a href="#">Home
+              <!--span.uk-light(uk-icon="icon: pencil")-->
+              <!--| #{" "}Item 1--></a></li>
+          <li><a href="#">About Us
+              <!--span.uk-light(uk-icon="icon: code")-->
+              <!--| #{" "}Item #{i}#{j}--></a></li>
+          <li><a href="#">Contact Us
+              <!--span.uk-light(uk-icon="icon: code")-->
+              <!--| #{" "}Item #{i}#{j}--></a></li>
+          <li><a href="#">Cart
+              <!--span.uk-light(uk-icon="icon: code")-->
+              <!--| #{" "}Item #{i}#{j}--></a></li>
+          <!-- <li><a href="#">Item 5 -->
+              <!--span.uk-light(uk-icon="icon: code")-->
+              <!--| #{" "}Item #{i}#{j}--></a></li>
+          <!-- <li><a href="#">Item 6 -->
+              <!--span.uk-light(uk-icon="icon: code")-->
+              <!--| #{" "}Item #{i}#{j}--></a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- end off-canvas menu-->
+  </div>
+                                      <!-- About Section -->
+     <h2 class="aboutHeading">About Section</h2>
+     <div class="uk-column-1-2@m uk-column-1-1@xs uk-column-divider">
+      <p class="aboutPara">An interactive AI powered self-learning personal assistant which aims to thin the line between Human Intelligence and Artificial Intelligence. Killy interacts with the users to understand their Socio-Cultural needs and make recommendation based on that. It enables users to access the information in any language due to its multi linguistic capacity. At the moment, it focuses at helping incoming travelers into Singapore.</p>
+  
+      <p class="aboutPara1">Killy will be available for booking of tickets, multiple types of reservations and searching for local information. We aim to provide a seamless user experience which reduces their inhabitance towards usage of technology.In an era, where everything is at your fingertips, we now provide you, KILLY, your own personal assistant to fulfill all your needs and make your life easier and faster.</p>
+  
+      <!-- <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p> -->
+  </div>                              
+  </body>
+</html>

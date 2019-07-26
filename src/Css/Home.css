@@ -1,48 +1,35 @@
 /* NavBar */
-.dis-none {
-  /* display: none; */
+.uk-navbar-container.uk-light:not(.uk-navbar-transparent):not(.uk-navbar-primary) {
+  background: #2493eb;
 }
-#navbar_toggle {
-  position: absolute;
-  right: 1em;
-  top: 2em;
+.siteName {
+  margin-top: 7%;
 }
-.h-40 {
-  height: 40px !important;
-  min-height: 40px;
+#mobile-navbar .uk-offcanvas-bar {
+  box-shadow: 2px 0 5px 0 #2493eb;
 }
-.logo {
-  width: 70px;
+#mobile-navbar li:nth-child(1),
+#mobile-navbar li:nth-child(2),
+#mobile-navbar li:nth-child(3) {
+  border-left: unset;
 }
-
-@media screen and (max-width: 768px) {
-  .uk-navbar-right {
-    /* display: none; */
-    width: 100%;
-  }
-  .uk-navbar-item {
-    display: inline;
-  }
-
-  .uk-navbar-nav {
-    display: block;
-  }
-  .navbar-collapse {
-    width: 100%;
-  }
-  .uk-navbar-nav li {
-    display: block;
-    padding: 10px;
-    height: 40px;
-    border-bottom: 1px solid #ddd;
-  }
-  .uk-navbar-nav li a {
-    display: block;
-    width: 80%;
-    padding: 0.5rem 1rem;
-  }
+#mobile-navbar li {
+  padding-left: 5px;
+  border-left: 2px solid transparent;
+}
+#mobile-navbar li.uk-active {
+  padding-left: 5px;
+  border-left: 2px solid #2493eb;
+}
+.uk-offcanvas-bar {
+  background-color: #2493eb;
 }
 
+.uk-sticky-fixed {
+  box-shadow: 0 1px 5px 0 #2493eb;
+}
+
+/* ******************************** */
 .imgHome {
   height: 200px;
   width: 100%;
@@ -86,4 +73,26 @@ input::placeholder {
 .fa {
   font-size: 40px;
   padding: 1%;
+}
+
+/***** About Us ******/
+.aboutHeading {
+  text-align: center;
+}
+.aboutPara {
+  margin-left: 10%;
+  /* margin-right: 5%; */
+}
+.aboutPara1 {
+  margin-right: 10%;
+}
+
+/* Contact Us Page */
+.contactLeft {
+  margin-top: 15%;
+  height: 500px;
+  margin-left: 15%;
+}
+.uk-section-default {
+  height: 600px !important;
 }

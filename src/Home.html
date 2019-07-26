@@ -19,33 +19,89 @@
     <link href="Css/Home.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- NAVBAR -->
-    <header>
-      <nav class="uk-navbar-container" uk-navbar>
-        <a href="index.html" class="uk-navbar-item uk-logo">
-          <img src="Images/ogo.png" class="logo" alt="logoName" srcset="" />
-        </a>
-        <div class="uk-navbar-right">
-          <a class="uk-navbar-toggle dis-none h-40" id="navbar_toggle">
-            <i uk-icon="icon: menu; ratio: 2"></i>
-          </a>
-          <div class="navbar-collapse" id="navbar_collapse">
-            <ul class="uk-navbar-nav">
-              <li class="uk-active"><a href="">Home</a></li>
-              <li class="uk-parent"><a href="">About</a></li>
-              <li class="uk-parent"><a href="">Blog</a></li>
-              <li class="uk-parent"><a href="">Services</a></li>
-              <li><a href="">Log in</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
-    <script src="Main.js"></script>
 
+                                                      <!-- NAVBAR -->
+    
+<div class="uk-offcanvas-content">
+  <!-- menu position. delete .uk-light to change black navbar to white (also you should change logo to dark one)-->
+  <nav class="uk-navbar-container uk-light" uk-navbar="mode: click" uk-sticky="animation: uk-animation-slide-top; show-on-up: true">
+    <!-- logo or title-->
+    <div class="uk-navbar-left nav-overlay"><a class="uk-navbar-item uk-logo" href="#">
+        <!--h3 Site Name--><img src="Images/Logo.png" alt="logo" width="60"></a>
+        <h3 class="siteName">Whole Sale World</h3>
+      </div>
+    <!-- end logo or title-->
+    <!-- menu-->
+    <div class="uk-navbar-right nav-overlay">
+      <div class="uk-navbar-flip">
+        <ul class="uk-navbar-nav uk-visible@s">
+          <li class="uk-active"><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Cart</a></li>
+          <!-- <li><a href="#">Item 5</a></li> -->
+          <!-- <li><a href="#">Item 6</a></li> -->
+          <li><a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a></li>
+        </ul>
+        <ul class="uk-navbar-nav uk-hidden@s">
+          <li><a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a></li>
+          <li><a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #mobile-navbar"></a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- endmenu-->
+    <!-- Overlay Search-->
+    <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
+      <div class="uk-navbar-item uk-width-expand">
+        <form class="uk-search uk-search-navbar uk-width-1-1">
+          <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+        </form>
+      </div><a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+    </div>
+    <!-- end overlay search-->
+  </nav>
+  <!-- end menu position-->
+  <!-- off-canvas menu-->
+  <div id="mobile-navbar" uk-offcanvas="mode: slide; flip: false">
+    <div class="uk-offcanvas-bar">
+      <!-- off-canvas close button-->
+      <button class="uk-offcanvas-close" type="button" uk-close></button>
+      <!-- off-canvas close button-->
+      <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+        <!-- logo or title-->
+        <li class="uk-text-center" style="padding: 0 0 25px 0;"><a href="#">
+            <!--h3 Site Name--><img src="Images/Logo.png" alt="logo" width="64"></a></li>
+        <!-- end logo or title-->
+        <!-- menu-->
+        <li>
+          <hr>
+        </li>
+        <li class="uk-text-center">
+          <h3>Whole Sale World</h3>
+        </li>
+        <li class="uk-active"><a href="#">Home
+            <!--span.uk-light(uk-icon="icon: pencil")-->
+            <!--| #{" "}Item 1--></a></li>
+        <li><a href="#">About Us
+            <!--span.uk-light(uk-icon="icon: code")-->
+            <!--| #{" "}Item #{i}#{j}--></a></li>
+        <li><a href="#">Contact Us
+            <!--span.uk-light(uk-icon="icon: code")-->
+            <!--| #{" "}Item #{i}#{j}--></a></li>
+        <li><a href="#">Cart
+            <!--span.uk-light(uk-icon="icon: code")-->
+            <!--| #{" "}Item #{i}#{j}--></a></li>
+        <!-- <li><a href="#">Item 5 -->
+            <!--span.uk-light(uk-icon="icon: code")-->
+            <!--| #{" "}Item #{i}#{j}--></a></li>
+        <!-- <li><a href="#">Item 6 -->
+            <!--span.uk-light(uk-icon="icon: code")-->
+            <!--| #{" "}Item #{i}#{j}--></a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- end off-canvas menu-->
+</div>
     <!-- SLider -->
     <div
       class="uk-position-relative uk-visible-toggle uk-light"
@@ -290,143 +346,8 @@
         </div>
       </div>
     </div>
-    <!-- New Section POPULAR ACTIVITIES -->
-
-    <h1 class="uk-heading-bullet uk-margin-large-left">Popular Activities</h1>
-    <div
-      class="uk-position-relative uk-visible-toggle uk-light uk-margin-large-right uk-margin-large-left"
-      tabindex="-1"
-      uk-slider
-    >
-      <ul
-        class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m uk-grid"
-      >
-        <li>
-          <div class="uk-panel">
-            <img
-              src="Images/TopDestinations/VietnamCambodia.jpg"
-              class="imgPopular"
-              alt=""
-            />
-            <div class="uk-position-center uk-panel">
-              <h1>Vietnam</h1>
-            </div>
-            <div>
-              <P class="uk-position-bottom-left uk-margin-small-left RsColor"
-                ><i class="fa fa-inr" aria-hidden="true"></i>8,549</P
-              >
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="uk-panel">
-            <img
-              src="Images/TopDestinations/singapore2.jpg"
-              class="imgPopular"
-              alt=""
-            />
-            <div class="uk-position-center uk-panel"><h1>Singapore</h1></div>
-          </div>
-        </li>
-        <li>
-          <div class="uk-panel">
-            <img
-              src="Images/TopDestinations/lankawi.jpg"
-              class="imgPopular"
-              alt=""
-            />
-            <div class="uk-position-center uk-panel"><h1>Malaysia</h1></div>
-          </div>
-        </li>
-        <li>
-          <div class="uk-panel">
-            <img
-              src="Images/TopDestinations/dublin-skyline.jpg"
-              class="imgPopular"
-              alt=""
-            />
-            <div class="uk-position-center uk-panel"><h1>Indonesia</h1></div>
-          </div>
-        </li>
-        <li>
-          <div class="uk-panel">
-            <img
-              src="Images/TopDestinations/bali2.jpg"
-              class="imgPopular"
-              alt=""
-            />
-            <div class="uk-position-center uk-panel"><h1>India</h1></div>
-          </div>
-        </li>
-        <li>
-          <div class="uk-panel">
-            <img
-              src="Images/TopDestinations/UAE.jpg"
-              class="imgPopular"
-              alt=""
-            />
-            <div class="uk-position-center uk-panel"><h1>UAE</h1></div>
-          </div>
-        </li>
-        <li>
-          <div class="uk-panel">
-            <img
-              src="Images/TopDestinations/MALAYSIA1.jpg"
-              class="imgPopular"
-              alt=""
-            />
-            <div class="uk-position-center uk-panel"><h1>Singapore</h1></div>
-          </div>
-        </li>
-        <li>
-          <div class="uk-panel">
-            <img
-              src="Images/TopDestinations/Hoi-an-vietnam.jpg"
-              class="imgPopular"
-              alt=""
-            />
-            <div class="uk-position-center uk-panel"><h1>Indonesia</h1></div>
-          </div>
-        </li>
-        <li>
-          <div class="uk-panel">
-            <img
-              src="Images/TopDestinations/Bodnath_Sky.jpg"
-              class="imgPopular"
-              alt=""
-            />
-            <div class="uk-position-center uk-panel"><h1>Nepal</h1></div>
-          </div>
-        </li>
-        <li>
-          <div class="uk-panel">
-            <img
-              src="Images/TopDestinations/Trafalgar Square , London Bridge.jpg"
-              class="imgPopular"
-              alt=""
-            />
-            <div class="uk-position-center uk-panel">
-              <h2>United Kingdom</h2>
-            </div>
-          </div>
-        </li>
-      </ul>
-
-      <a
-        class="uk-position-center-left uk-position-small uk-hidden-hover"
-        href="#"
-        uk-slidenav-previous
-        uk-slider-item="previous"
-      ></a>
-      <a
-        class="uk-position-center-right uk-position-small uk-hidden-hover"
-        href="#"
-        uk-slidenav-next
-        uk-slider-item="next"
-      ></a>
-    </div>
-    <!-- Recomended by us -->
-
+   
+    
     <!-- Footer -->
 
     <div class="uk-section uk-section-small uk-section-muted">
