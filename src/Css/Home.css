@@ -50,7 +50,7 @@
 }
 input::placeholder {
   color: rgb(0, 84, 180) !important;
-  font-size: 24px !important;
+  /* font-size: 24px !important; */
   margin-top: 30% !important;
 }
 .uk-search-icon {
@@ -95,4 +95,14 @@ input::placeholder {
 }
 .uk-section-default {
   height: 600px !important;
+}
+/* Contact Us */
+.contactHeading {
+  font-weight: 600;
+}
+
+.contactPara {
+  font-weight: 600;
+  font-size: 18px;
+  color: black;
 }
